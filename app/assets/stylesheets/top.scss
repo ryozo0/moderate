@@ -1,0 +1,86 @@
+// Place all the styles related to the Top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body, html {
+    margin: 0;
+    /* important */
+    height: 100%;
+    position: relative;
+  }
+
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  footer {
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    line-height: 100px;
+  }
+
+  .box {
+    margin: -200px 0 0 -300px;  /*縦横半分をネガティブマージンでずらす*/
+    position: absolute;     /*body要素に対して絶対配置*/
+    top: 50%;       /*上端を中央に*/
+    left: 50%;      /*左端を中央に*/
+    width: 600px;   /*横幅*/
+    height: 400px;  /*縦幅*/
+    background-color:#363947;
+    opacity: 0.8;
+  }
+
+  .main-header {
+    min-height: 1000px;
+    padding-bottom: 15%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-url("makurobi.jpg");
+    background-attachment: fixed;
+  }
+
+.box h1 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 200px;
+  margin: 0;
+  text-align: center;
+}
+
+.btn-search {
+  text-align: center;
+}
+
+h2 {
+    color: #4f4d47;
+    font-weight: normal;
+    font-size: 23px;
+    margin: 0;
+    padding: 8px 0;
+}
+
+section img {
+  margin-bottom: 10px;
+}
+
+.text {
+  margin-left: 130px;
+  text-align: center;
+}
+
+p { color: #4f4d47; font-size: 14px; margin: 0;}
+#headline {
+  font-size: 33px;
+  text-align: center;
+  min-width: 100%;
+  padding: 64px 0;
+  font-family: sans-serif;
+}
+#content {
+  background: #f5f3ec;
+}
