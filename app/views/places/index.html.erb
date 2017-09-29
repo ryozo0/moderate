@@ -4,10 +4,10 @@
     <div class="col-md-6 col-md-offset-5 col-sm-5 col-sm-offset-4 col-xs-4 col-xs-offset-3">
       <div class="form-inline">
         <%= form_tag places_path, :method => 'get' do %>
-            <p>
-              <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "店名を入力" %>
-              <%= submit_tag "Search", class: "btn btn-warning", :name => nil %>
-            </p>
+        <p>
+          <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "店名を入力" %>
+          <%= submit_tag "Search", class: "btn btn-warning", :name => nil %>
+        </p>
         <% end %>
       </div>
     </div>
@@ -17,14 +17,18 @@
     <div id="map"></div>
 
     <script type="text/javascript">
-        handler = Gmaps.build('Google');
-        handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-          markers = handler.addMarkers(<%=raw @hash.to_json %>, {draggable: true});
-          handler.bounds.extendWith(markers);
-          handler.fitMapToBounds();
-        });
+      handler = Gmaps.build('Google');
+      handler.buildMap({
+        provider: {},
+        internal: {
+          id: 'map'
+        }
+      }, function () {
+        markers = handler.addMarkers(<%=raw @hash.to_json %>, {draggable: true});
+        handler.bounds.extendWith(markers);
+        handler.fitMapToBounds();
+      });
     </script>
   </div>
-
 
 </div>
