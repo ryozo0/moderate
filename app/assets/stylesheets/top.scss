@@ -46,7 +46,6 @@ body, html {
 
   .main-header {
     min-height: 1000px;
-    padding-bottom: 15%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +82,7 @@ section img {
   text-align: center;
 }
 
-p { color: #4f4d47; font-size: 14px; margin: 0;}
+p { color: #4f4d47; font-size: 17px;}
 #headline {
   font-size: 33px;
   text-align: center;
@@ -93,4 +92,8 @@ p { color: #4f4d47; font-size: 14px; margin: 0;}
 }
 #content {
   background: #f5f3ec;
+}
+
+.navbar {
+  margin-bottom: -20px;
 }

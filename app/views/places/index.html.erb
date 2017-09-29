@@ -1,7 +1,6 @@
 <div class="container">
-  <p id="notice"><%= notice %></p>
   <div class="row">
-    <div class="col-md-6 col-md-offset-5 col-sm-5 col-sm-offset-4 col-xs-4 col-xs-offset-3">
+    <div class="col-md-5 col-md-offset-4 col-sm-6 col-sm-offset-4 col-xs-5 col-xs-offset-4">
       <div class="form-inline">
         <%= form_tag places_path, :method => 'get' do %>
         <p>
@@ -24,9 +23,10 @@
           id: 'map'
         }
       }, function () {
-        markers = handler.addMarkers(<%=raw @hash.to_json %>, {zoom: 16});
+        markers = handler.addMarkers(<%=raw @hash.to_json %>);
         handler.bounds.extendWith(markers);
         handler.fitMapToBounds();
+        handler.getMap().setZoom(12);
       });
     </script>
   </div>

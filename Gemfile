@@ -55,3 +55,5 @@ end
 gem 'rails_12factor', group: :production
 
 gem 'therubyracer'
+
+gem 'social-share-button'
