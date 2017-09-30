@@ -4,7 +4,7 @@
       <div class="form-inline">
         <%= form_tag places_path, :method => 'get' do %>
         <p>
-          <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "店名を入力" %>
+          <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "（例）新宿" %>
           <%= submit_tag "Search", class: "btn btn-warning", :name => nil %>
         </p>
         <% end %>
