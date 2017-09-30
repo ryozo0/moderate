@@ -5,6 +5,7 @@ class PlacesController < ApplicationController
       marker.lat place.latitude
       marker.lng place.longitude
       marker.infowindow render_to_string(partial: "places/infowindow", locals: { place: place})
+      marker.json({description: place.description})
     end
   end
 
